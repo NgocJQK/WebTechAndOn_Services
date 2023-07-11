@@ -1,0 +1,65 @@
+.col-66{
+    width: 65%;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    margin: 0;
+    box-shadow: 0 0 8px grey;
+    margin: 5px;
+    float:right;
+}
+.col-33{
+    margin: 5px;
+    width: 33.33%;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    overflow: hidden;
+    box-shadow: 0 0 8px grey;
+    float: left;
+}
+
+.list{
+    padding:10px 10px 0px 10px;
+    overflow: hidden;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.list-item{
+    text-decoration: none;
+    color: black;
+    float: left;
+    border: 1px solid black;
+    padding: 10px;
+    padding: 10px;
+}
+
+.fake-image{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    width: 100%;
+    height: 120px;
+    position: relative;
+}
+
+.fake-image-circle{
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 90px;
+    left: 65px;
+    border: 5px solid white;
+}
+
+.minwidth{
+    min-width: 30%;
+    display: inline-block;
+    margin: 5px;
+}
