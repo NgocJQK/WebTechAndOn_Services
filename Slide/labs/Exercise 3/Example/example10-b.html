@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+
+	<SCRIPT type="text/javascript">
+
+	function printToFrame( text ) {
+		parent.frames['left'].document.leftForm.leftField.value = text;
+	}
+
+	</SCRIPT>
+
+</HEAD>
+<BODY>
+
+<FORM name="rightForm" onSubmit="printToFrame( document.rightForm.newText.value )">
+	<INPUT type="text" name="newText">
+	<INPUT type="submit" value="Submit">
+
+</FORM>
+
+</BODY>
+</HTML>

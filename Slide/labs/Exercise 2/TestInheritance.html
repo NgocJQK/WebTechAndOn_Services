@@ -1,0 +1,68 @@
+<HTML>
+<HEAD>
+<TITLE> JavaScript Assignment Part 1 </TITLE>
+
+<script type="text/javascript" src="person.js"></script>
+<script type="text/javascript" src="student.js"></script>
+<script type="text/javascript" src="professor.js"></script>
+</HEAD>
+
+<BODY>
+
+<script type="text/javascript">
+
+var studentArr = Array();
+var profArr = Array();
+
+var studentOne = new student("Jimmy", "Chan", new Date(1979, 1, 12), 200420);
+studentOne.setProgram("Computer Science");
+
+var studentTwo = new student("John", "Doe", new Date(1983, 5, 20), 678946);
+studentTwo.setProgram("Engineering");
+studentTwo.setGraduated(true);
+
+studentArr.push(studentOne);
+studentArr.push(studentTwo);
+
+var profOne = new professor("Greg", "Wilson", new Date(1969, 3, 10));
+profOne.addCourse("CSC309");
+profOne.addCourse("CSC495");
+profOne.addCourse("CSC1023");
+
+var profTwo = new professor("Karen", "Reid", new Date(1972, 8, 15));
+profTwo.setOnSabbatical(true);
+
+profArr.push(profOne);
+profArr.push(profTwo);
+
+for(var i=0; i<studentArr.length; i++) {
+	var currentStudent = studentArr[i];
+	document.writeln(currentStudent.getFirstName() + " " + currentStudent.getLastName());
+	document.writeln("<BR>");
+	document.writeln("Born: " + currentStudent.getBirthday().toString());
+	document.writeln("<BR>");
+	document.writeln("Student Number: " + currentStudent.getStudentId());
+	document.writeln("<BR>");
+	document.writeln("Program: " + currentStudent.getProgram());
+	document.writeln("<BR>");
+	document.writeln("Has Graduated: " + currentStudent.isGraduated());
+	document.writeln("<BR><BR>");
+}
+
+for(var j=0; j<profArr.length; j++) {
+	var currentProf = profArr[j];
+	document.writeln(currentProf.getFirstName() + " " + currentProf.getLastName());
+	document.writeln("<BR>");
+	document.writeln("Born: " + currentProf.getBirthday().toString());
+	document.writeln("<BR>");
+	document.writeln("Course List: " + currentProf.getCourseList());
+	document.writeln("<BR>");
+	document.writeln("On Sabbatical: " + currentProf.isOnSabbatical());
+	document.writeln("<BR><BR>");
+}
+
+</script>
+
+
+</BODY>
+</HTML>

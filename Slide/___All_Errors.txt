@@ -1,0 +1,5 @@
+CorrelationId: 29f3f8b8-f680-404d-94ce-6c90b798e20e
+UTC DateTime: 07/11/2023 14:49:00
+
+The following file/folder has not been downloaded
+0. B?n tham kh?o/Lec 10.2-Docker + K8s +Serverless .pdf

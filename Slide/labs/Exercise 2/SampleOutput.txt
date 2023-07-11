@@ -1,0 +1,21 @@
+Jimmy Chan
+Born: Mon Feb 12 1979 00:00:00 GMT-0500 (Eastern Standard Time)
+Student Number: 200420
+Program: Computer Science
+Has Graduated: false
+
+John Doe
+Born: Mon Jun 20 1983 00:00:00 GMT-0400 (Eastern Standard Time)
+Student Number: 678946
+Program: Engineering
+Has Graduated: true
+
+Greg Wilson
+Born: Thu Apr 10 1969 00:00:00 GMT-0500 (Eastern Standard Time)
+Course List: CSC309,CSC495,CSC1023
+On Sabbatical: false
+
+Karen Reid
+Born: Fri Sep 15 1972 00:00:00 GMT-0400 (Eastern Standard Time)
+Course List:
+On Sabbatical: true 
