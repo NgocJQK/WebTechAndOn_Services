@@ -1,0 +1,8 @@
+function palindrome(str) {
+  // Remove non-alphanumeric characters and convert to lower case
+  str = str.replace(/[\W_]/g, '').toLowerCase();
+  // Check if string is equal to its reverse
+  return str === str.split('').reverse().join('');
+}
+
+palindrome("eye");

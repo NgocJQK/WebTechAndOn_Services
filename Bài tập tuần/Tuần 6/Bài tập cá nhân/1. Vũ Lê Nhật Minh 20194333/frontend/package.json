@@ -1,0 +1,19 @@
+{
+  "name": "notional-new-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "next-sitemap",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/bundle-analyzer": "^13.2.4",
+    "axios": "^1.4.0",
+    "framer-motion": "^7.6.2",
+    "next": "13.0.0",
+    "react": "18.2.0"
+  }
+}

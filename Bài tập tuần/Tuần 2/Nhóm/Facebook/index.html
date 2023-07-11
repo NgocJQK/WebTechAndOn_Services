@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <h1>facebook</h1>
+    <div class="container" style="margin-bottom: 1px;">
+        <form action="https://www.facebook.com/signup/" method="post"></form>
+        <h2>Create a new account</h2>
+        <h3>It's quick and easy.</h3>
+    </div>
+    <div class="container" style="margin-top: 0px;">
+        <div class="form-group">
+            <form autocomplete="on">
+                <span> <input type="text" name="fname" placeholder="Firstname" required>
+                    <input type="text" name="sname" placeholder="Surname" required>
+                </span>
+                <!--Cach cho Firstname Surname len cung 1 dong-->
+                <input type="text" name="mobile" placeholder="Mobile number or email address" size="50" required>
+                <input type="password" name="newpass" placeholder="New password" size="50" required>
+            </form>
+        </div>
+        <div class="form-group">
+            <label for="birthday">Date of birth <i class="fa fa-question-circle"></i><br>
+
+                <span>
+                    <select name="birthday_day" id="day">
+                        <option value="">27</option>
+                    </select>
+                    <select name="birthday_month" id="month">
+                        <option value="">Mar</option>
+                        <option value="1">Jan</option>
+                        <option value="2">Feb</option>
+                        <option value="3">Mar</option>
+                        <option value="4">Apr</option>
+                        <option value="5">May</option>
+                        <option value="6">Jun</option>
+                        <option value="7">Jul</option>
+                        <option value="8">Aug</option>
+                        <option value="9">Sep</option>
+                        <option value="10">Oct</option>
+                        <option value="11">Nov</option>
+                        <option value="12">Dec</option>
+                    </select>
+                    <select name="birthday_year" id="year">
+                        <option value="">2023</option>
+                    </select>
+                </span>
+            </label>
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender <i class="fa fa-question-circle"></i><br>
+                <div class="Na">
+                    Female <input name="gender" value="Female" type="radio">
+                </div>
+                <div class="Na">
+                    Male <input name="gender" value="Male" type="radio">
+                </div>
+                <div class="Na">
+                    Custom <input name="gender" value="Custom" type="radio">
+                </div>
+            </label>
+        </div>
+        <div class="terms">
+            <p>People who use our service may have uploaded your contact information to Facebook.<a href="#">Learn
+                    more.</a> <br>
+                By clicking Sign Up, you agree to our <a href="#">Terms, Privacy Policy </a> and <a href="#">Cookies
+                    Policy.</a>.
+                You may receive SMS notifications from us and can opt out at any time.</p>
+        </div>
+        <div class="submit">
+            <button type="submit">Sign Up</button>
+        </div>
+        </form>
+
+        <div class="check">
+            <p>Already have an account?</p>
+        </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

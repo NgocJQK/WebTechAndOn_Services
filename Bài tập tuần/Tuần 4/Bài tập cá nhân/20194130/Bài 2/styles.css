@@ -1,0 +1,76 @@
+main {
+  display: grid;
+  grid-template-columns: 30vw 68vw;
+  grid-template-rows: 55vh 40vh;
+  gap: 10px;
+}
+
+article {
+  border: 1px solid black;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a {
+  text-decoration: none;
+}
+
+.cover-image {
+  height: 20vh;
+  /* background-color: brown; */
+  background-image: url("https://dean2020.edu.vn/wp-content/uploads/2019/06/hinh-6.png?fbclid=IwAR0lglhr6oJ5eQSRpGiweKiOS5ufU-k5ZFFVUu3MSm247pY_DVaq9Ef6m58");
+}
+.user-image-container {
+  height: 10vh;
+  /* background-color: aqua; */
+}
+.user-image {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  top: 50px;
+  left: 50px;
+  object-fit: cover;
+}
+
+#more-info {
+  grid-row: 2;
+}
+
+.list-tabs {
+  display: flex;
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.tabs {
+  border: 1px solid black;
+  padding: 0.5rem;
+  color: black;
+  margin: 0;
+  cursor: pointer;
+}
+.info {
+  border-top: 1px solid black;
+  padding-left: 10px;
+}
+
+#full-info {
+  grid-row: 1 / span 2;
+  height: 80vh;
+}
+.info-title {
+  grid-column: 1 / span 3;
+  padding-left: 20px;
+  font-weight: 800;
+}
+.full-info-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  border-top: 1px solid black;
+}
+.full-info-container > div {
+  border: 0;
+}

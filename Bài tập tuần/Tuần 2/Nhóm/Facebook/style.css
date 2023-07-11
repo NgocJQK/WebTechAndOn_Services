@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    border-radius: 5px;
+}
+h1 {
+    color: #1877f2;
+    text-align: center;
+    font-size: 45px;
+}
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+h2 {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #999999;
+    text-align: center;
+    font-size: 18px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-bottom: 5px;
+}
+input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#day {
+    width: 28%;
+    padding: 6px 8px;
+    margin-right: 8px;
+    border-radius: 5px;
+}
+
+#month {
+    width: 28%;
+    padding: 6px 8px;
+    margin-right: 8px;
+    border-radius: 5px;
+}
+
+#year {
+    width: 28%;
+    padding: 6px 8px;
+    border-radius: 5px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.submit {
+    text-align: center;
+}
+button {
+    padding: 10px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 180px;
+}
+.terms {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.terms a {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+.check {
+    color: #1877f2;
+    text-align: center;
+    font-size: 17px;
+}
+
+.Na {
+    display: inline-block;
+    width: 28%;
+    border-radius: 5px;
+    border: 1px solid rgb(118, 118, 118);
+    text-align: center;
+    /* padding-top: 2.5%; */
+    height: 29px;
+    line-height: 29px;
+    margin-right: 8px;
+}

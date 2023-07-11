@@ -1,0 +1,47 @@
+var romanMap = new Map();
+romanMap.set(1000, "M");
+romanMap.set(900, "CM");
+romanMap.set(500, "D");
+romanMap.set(400, "CD");
+romanMap.set(100, "C");
+romanMap.set(90, "XC");
+romanMap.set(50, "L");
+romanMap.set(40, "XL");
+romanMap.set(10, "X");
+romanMap.set(9, "IX");
+romanMap.set(5, "V");
+romanMap.set(4, "IV");
+romanMap.set(1, "I");
+
+// romanMap.forEach((value, key) => {
+//   console.log(`m[${key}] = ${value}`);
+// })
+// for (const x of romanMap.entries()) {
+//   if (x[0] === 90) {
+//     break;
+//   }
+//   console.log(x[0])
+// }
+
+function findRoman(num) {
+  for (const x of romanMap.entries()) {
+    if (num > x[0] || num === x[0]) {
+      return x[0];
+    }
+  }
+}
+// console.log(findRoman(36));
+
+function convertToRoman(num) {
+  let newNum = num;
+  let res = "";
+  while (newNum > 0) {
+    let key = findRoman(newNum);
+    newNum -= key;
+    res += romanMap.get(key);
+  }
+  return res;
+}
+
+console.log(convertToRoman(649));
+// convertToRoman(36);
