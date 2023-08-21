@@ -1,0 +1,27 @@
+<hr> kẻ ngang web
+<pre> một văn bản được định dạng trước
+<em> nghiên chữ
+<mark> tô vàng chữ được chỉ định
+<sub> in nhỏ chữ
+<del> gạch ngang chữ
+</p> thêm " "
+
+<blockquote cite="link">
+diễn giải 
+</blockquote>
+
+<bdo dir="rtl">
+What a beautiful day!
+</bdo>
+Đoạn code này được sử dụng để hiển thị văn bản từ phải qua trái (Right-to-Left) bằng cách sử dụng thẻ <bdo> (Bidirectional Override) với thuộc tính dir được chỉ định là "rtl" (Right-to-Left). Trong trường hợp này, văn bản "What a beautiful day!" sẽ được hiển thị từ phải qua trái thay vì từ trái qua phải, giống như các ngôn ngữ có hướng viết từ phải qua trái như tiếng Ả Rập hoặc tiếng Hebrew.
+
+<p>
+        The <abbr title="World Health Organization"> WHO
+    </abbr> was founded in 1948.
+    </p>
+
+đưa chuột tới gần WHO thì sẽ hiển thi world Health...
+
+
+căn giữa đoạn văn dùng style="text-align"
+
