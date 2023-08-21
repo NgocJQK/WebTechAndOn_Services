@@ -1,0 +1,193 @@
+/* Add CSS reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set default font styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #222;
+  color: whitesmoke;
+}
+
+/* Set default link styles */
+a {
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    background-color: brown;
+    justify-content: right;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+}
+nav > ul {
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav > ul > li {
+    display: inline;
+    padding: 10px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+nav > ul > li:hover {
+    opacity: 1;
+}
+nav > ul > li > a {
+    color: whitesmoke;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-size: large;
+}
+nav > ul > li > a:active {
+    color: aqua;
+}
+
+#welcome-section {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 30vh;
+}
+#welcome-section > h1 {
+    font-family: 'Alkatra', cursive;
+    font-size: 50px;
+    color: rgb(179, 42, 62);
+}
+#welcome-section > h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+}
+
+#projects {
+  background-color: cadetblue;
+  text-align: center;
+  padding: 10vh 2vw;
+  display: grid;
+  grid-template-columns: 30vw 30vw 30vw;
+  gap: 2vw;
+}
+.projects-title {
+  grid-column: 1 / span 3;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Alkatra', cursive;
+  font-size: 26px;
+}
+.project-tile {
+  width: 30vw;
+  height: 30vw;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  align-content: space-around;
+  justify-content: center;
+  align-items: stretch;
+}
+.project-tile > img {
+  width: 100%;
+  height: 90%;
+  object-fit: contain;
+}
+.project-tile > p {
+  font-family: monospace;
+  color: #222;
+  font-size: 1.5em;
+  background-color: aquamarine;
+  padding: 10px;
+}
+.project-tile > p > span {
+  transition: 0.5s;
+}
+.project-tile:hover > p > span {
+  color: red;
+}
+@media screen and (max-width: 600px) {
+  #projects {
+    grid-template-columns: 100vw;
+    gap: 5vw;
+    padding: 5vh 2vw;
+    padding-top: 5vh;
+  }
+  .projects-title {
+    grid-column: 1;
+    font-size: 16px;
+  }
+  .project-tile {
+    width: 96vw;
+    height: 100vw;
+  }
+}
+
+#contacts {
+  background-color: #333;
+}
+.contacts-header {
+  padding: 20vh 0 5vh 0;
+  text-align: center;
+}
+.contacts-header > h1 {
+  font-family: 'Alkatra', cursive;
+    font-size: 50px;
+    color: rgb(101, 89, 192);
+}
+.contacts-header > h2 {
+  font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    color: rgb(89, 192, 101);
+}
+.contacts-container {
+  display: flex;
+  text-align: center;
+  padding-bottom: 20vh;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.contacts-container > a {
+  font-family: 'Courier New', Courier, monospace;
+  color: antiquewhite;
+  padding: 20px;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.contacts-container > a:hover {
+  transform: translateY(-10px);
+}
+#contacts > hr {
+  border: 1px dashed red;
+}
+#contacts > p {
+  font-style: italic;
+}
+@media screen and (max-width: 600px) {
+  #contacts{
+  height: 123vh;
+  }
+  .contacts-container {
+    flex-direction: column;
+  }
+  .contacts-container > a {
+    padding: 0;
+  }
+}

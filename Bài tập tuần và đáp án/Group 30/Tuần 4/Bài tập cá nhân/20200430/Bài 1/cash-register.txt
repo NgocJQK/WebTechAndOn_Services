@@ -1,0 +1,48 @@
+function checkCashRegister(price, cash, cid) {
+  const currencyValues = [    ['PENNY', 0.01],
+    ['NICKEL', 0.05],
+    ['DIME', 0.1],
+    ['QUARTER', 0.25],
+    ['ONE', 1],
+    ['FIVE', 5],
+    ['TEN', 10],
+    ['TWENTY', 20],
+    ['ONE HUNDRED', 100]
+  ];
+  
+  const changeDue = cash - price;
+  let changeRemaining = changeDue;
+  
+  const totalCashInDrawer = cid.reduce((total, currency) => total + currency[1], 0);
+  if (totalCashInDrawer < changeDue) {
+    return {status: 'INSUFFICIENT_FUNDS', change: []};
+  } else if (totalCashInDrawer === changeDue) {
+    return {status: 'CLOSED', change: cid};
+  }
+  
+  const change = [];
+  for (let i = currencyValues.length - 1; i >= 0; i--) {
+    const currencyName = currencyValues[i][0];
+    const currencyValue = currencyValues[i][1];
+    let currencyAmount = cid[i][1];
+    let currencyCount = 0;
+    while (changeRemaining >= currencyValue && currencyAmount > 0) {
+      changeRemaining -= currencyValue;
+      currencyAmount -= currencyValue;
+      currencyCount += currencyValue;
+      changeRemaining = Math.round(changeRemaining * 100) / 100;
+    }
+    if (currencyCount > 0) {
+      change.push([currencyName, currencyCount]);
+    }
+  }
+  
+  if (changeRemaining > 0) {
+    return {status: 'INSUFFICIENT_FUNDS', change: []};
+  }
+  
+  return {status: 'OPEN', change: change};
+}
+
+
+checkCashRegister(19.5, 20, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]]);

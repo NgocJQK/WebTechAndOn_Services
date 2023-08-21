@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <script>
+        function openLeftTab(evt, tabName) {
+          var tabContents = document.getElementsByClassName("left-tabs");
+          for (var i = 0; i < tabContents.length; i++) {
+            tabContents[i].className = tabContents[i].className.replace(" active", "");
+          }
+          var tabButtons = document.getElementsByClassName("left-tab-button");
+          for (var i = 0; i < tabButtons.length; i++) {
+            tabButtons[i].className = tabButtons[i].className.replace(" active", "");
+          }
+          document.getElementById(tabName).className += " active";
+          evt.currentTarget.className += " active";
+        }
+
+        function openRightTab(evt, tabName) {
+          var tabContents = document.getElementsByClassName("right-tabs");
+          for (var i = 0; i < tabContents.length; i++) {
+            tabContents[i].className = tabContents[i].className.replace(" active", "");
+          }
+          var tabButtons = document.getElementsByClassName("right-tab-button");
+          for (var i = 0; i < tabButtons.length; i++) {
+            tabButtons[i].className = tabButtons[i].className.replace(" active", "");
+          }
+          document.getElementById(tabName).className += " active";
+          evt.currentTarget.className += " active";
+        }
+      </script>
+</head>
+<body>
+    <div class="container">
+        <div class="left-bar">
+            <div class="card">
+                <div class="image">
+                    <img class="background"
+                    src="https://dean2020.edu.vn/wp-content/uploads/2019/06/hinh-6.png?fbclid=IwAR0lglhr6oJ5eQSRpGiweKiOS5ufU-k5ZFFVUu3MSm247pY_DVaq9Ef6m58"
+                    />
+                    <img class="avatar"
+                    src="https://dean2020.edu.vn/wp-content/uploads/2019/06/hinh-6.png?fbclid=IwAR0lglhr6oJ5eQSRpGiweKiOS5ufU-k5ZFFVUu3MSm247pY_DVaq9Ef6m58"
+                    />
+                </div>
+                
+                <div class="info">
+                    <p>MS: 2019433</p>
+                    <p>Họ tên: Vũ Lê Nhật Minh</p>
+                    <p>Lớp: Kỹ thuật máy tính 02 - K64</p>
+                    <p>Email: minh.vln194333@sis.hust.edu.vn</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <ul class="tab">
+                    <li class="left-tab-button active" onclick="openLeftTab(event, 'trang-thai')">
+                        Trạng thái
+                    </li>
+                    <li class="left-tab-button" onclick="openLeftTab(event, 'quan-ly')">
+                        Quản lý
+                    </li>
+                </ul>
+                <div id="trang-thai" class="left-tabs active">
+                    <p>Trạng thái học tập: Học</p>
+                    <p>CPA: 3.5</p>
+                    <p>Nợ: 0 TC</p>
+                    <p>Tích lũy: 71 TC</p>
+                    <p>Mức cảnh báo: M0</p>
+                    <p>Trình độ: 3</p>
+                </div>
+
+                <div id="quan-ly" class="left-tabs">
+                    <p>Cán bộ quản lý lớp: tien.nguyenduc@hust.edu.vn</p>
+                    <p>Viện: Trường Công nghệ Thông tin và Truyền thông</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-bar">
+            <div class="card">
+                <ul class="tab">
+                    <li class="right-tab-button active" onclick="openRightTab(event, 'ly-lich')">
+                        Lý lịch
+                    </li>
+                    <li class="right-tab-button" onclick="openRightTab(event, 'quyet-dinh')">
+                        Quyết định
+                    </li>
+                    <li class="right-tab-button" onclick="openRightTab(event, 'khen-thuong')">
+                        Khen thưởng
+                    </li>
+                    <li class="right-tab-button" onclick="openRightTab(event, 'lien-he')">
+                        Liên hệ
+                    </li>
+                    <li class="right-tab-button" onclick="openRightTab(event, 'nhan-xet')">
+                        Nhận xét
+                    </li>
+                    <li class="right-tab-button" onclick="openRightTab(event, 'hoat-dong')">
+                        Hoạt động tham gia
+                    </li>
+                </ul>
+
+                <div id="ly-lich" class="right-tabs active">
+                    <h2 class="title">Thông tin cá nhân</h2>
+                    <div class="d-flex">
+                        <div class="inner-col">
+                            <p>Ngày sinh: 12/12/1212</p>
+                            <p>Số CMTND: 01234567890</p>
+                            <p>Dân tộc: Kinh</p>
+                            <p>Ngày vào Đoàn: 15/12/1294</p>
+                        </div>
+                        <div class="inner-col">
+                            <p>Nơi sinh: Hà Nội</p>
+                            <p>Tôn giáo: Không</p>
+                            <p>Ngày vào Đảng: 12/12/1212</p>
+                        </div>
+                        <div class="inner-col">
+                            <p>Giới tính: Nam</p>
+                            <p>Ngày cấp: 12/12/1212</p>
+                            <p>Chi đoàn: Hà Nội</p>
+                        </div>
+                    </div>
+                    <p>Đối tượng chính sách: Không</p>
+                    <p>Số thẻ bảo hiểm: 3621554540</p>
+                    <p>Địa chỉ thường trú: Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</p>
+                    <p>Nơi ở hiện tại: Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</p>
+                    
+                    <h2 class="title">Thông tin gia đình</h2>
+                    <h3 style="padding-left: 10px;">Họ và tên cha: TRẦN VĂN A</h3>
+                    <div class="d-flex">
+                        <div class="inner-col">
+                            <p>Dân tộc: KINH</p>
+                            <p>Nơi làm việc: Hà Nội</p>
+                            <p>Địa chỉ thường trú: Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</p>
+                            <p>Liên hệ: 01234567891</p>
+                        </div>
+                        <div class="inner-col">
+                            <p>Năm sinh: 1212</p>
+                            <p>Tôn giáo: Không</p>
+                        </div>
+                        <div class="inner-col">
+                            <p>Quốc tịch: KINH</p>
+                            <p>Nghề nghiệp: KĨ SƯ</p>
+                        </div>
+                    </div>
+                    <h3 style="padding-left: 10px;">Họ và tên mẹ: TRẦN THỊ B</h3>
+                    <div class="d-flex">
+                        <div class="inner-col">
+                            <p>Dân tộc: KINH</p>
+                            <p>Nơi làm việc: Hà Nội</p>
+                        </div>
+                        <div class="inner-col">
+                            <p>Năm sinh: 1212</p>
+                            <p>Tôn giáo: Không</p>
+                        </div>
+                        <div class="inner-col">
+                            <p>Quốc tịch: KINH</p>
+                            <p>Nghề nghiệp: KĨ SƯ</p>
+                        </div>
+                    </div>
+                    <h3 style="padding-left: 10px;">Thông tin người thân khác:</h3>
+                </div>
+
+                <div id="quyet-dinh" class="right-tabs">
+                    <ol>
+                        <li style="line-height: 32px;">
+                            Quyết định số: nhập học 2019
+                            <br/>
+                            Thời gian thực hiện: 19.08.2019
+                            <br/>
+                            Trạng thái: Đã thực hiện lớp,CTĐT
+                        </li>
+                        
+                        <li style="line-height: 32px;">
+                            Quyết định số: Chuyển từ KCNTT sang TCNTT
+                            <br/>
+                            Thời gian thực hiện: 20.04.2022
+                            <br/>
+                            Trạng thái: Đã thực hiện CTĐT
+                        </li>
+                    </ol>
+                </div>
+
+                <div id="khen-thuong" class="right-tabs">
+
+                </div>                
+                
+                <div id="nhan-xet" class="right-tabs">
+
+                </div>                
+
+                <div id="hoat-dong" class="right-tabs">
+
+                </div>
+
+                <div id="lien-he" class="right-tabs">
+                    Số điện thoại: 01234567890
+                    <br/>
+                    SĐT cha: Không có dữ liệu (TRẦN VĂN A)
+                    <br/>
+                    Email:minh.vln194333@sis.hust.edu.vn
+                    <br/>
+                    Nơi ở hiện tại: Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

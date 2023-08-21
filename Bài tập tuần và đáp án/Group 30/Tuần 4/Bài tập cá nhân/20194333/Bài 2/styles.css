@@ -1,0 +1,112 @@
+.container {
+    max-width: 1400px;
+    margin: 100px auto;
+    display: flex;
+}
+
+.card {
+    border-radius: 20px;
+    border: 1px solid white;
+    margin: 1rem;
+    box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.209);
+}
+
+.tab {
+    border-bottom: 1px solid rgb(228, 228, 228);
+    margin: 20px 20px 20px 20px;
+    list-style-type: none;
+    display: flex;
+    color: #409eff;
+    padding: 0;
+}
+
+.tab li {
+    font-size: 16px;
+    margin-bottom: -1px;
+    margin-right: -1px;
+    border: 1px solid rgb(228, 228, 228);
+    padding: 10px 20px;
+}
+
+.tab li:hover {
+    color: #409eff;
+}
+
+.tab li:last-child {
+    border-top-right-radius: 5px;
+}
+
+.tab li:first-child {
+    border-top-left-radius: 5px;
+}
+
+.left-tab-button, .right-tab-button {
+    color: black;
+    cursor: pointer;
+}
+
+.left-tab-button.active, .right-tab-button.active {
+    color: #409eff;
+    border-bottom: 1px solid white;
+}
+
+.left-bar {
+    width: 40%;
+    max-width: 450px;
+}
+
+.image .avatar {
+    border-radius: 50%;
+    border: 8px solid white;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: 20px;
+}
+
+.image .background {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 100%;
+}
+
+.left-tabs {
+    display: none;
+    margin: 20px;
+}
+
+.left-tabs.active {
+    display: block;
+}
+
+.right-bar {
+    width: 100%;
+}
+
+.right-tabs {
+    display: none;
+    margin: 20px;
+    margin-top: 30px;
+}
+
+.right-tabs.active {
+    display: block;
+}
+
+.title {
+    text-transform: capitalize;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.inner-col {
+    width: 33%;
+    margin-top: 0 !important;
+    margin: 20px;
+}
+
+.info {
+    padding: 0px 20px;
+}

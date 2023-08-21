@@ -1,0 +1,26 @@
+var alphabet1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var alphabet2 = "NOPQRSTUVWXYZABCDEFGHIJKLM"
+
+function cypher(character) {
+  for (let i = 0; i < alphabet1.length; i++) {
+    if (alphabet1[i] === character) {
+      return alphabet2[i];
+    }
+  }
+  return character;
+}
+// console.log(cypher("A"))
+
+function rot13(str) {
+  let newStr = ""
+  for (let i = 0; i < str.length; i++) {
+    newStr += cypher(str[i]);
+  }
+  return newStr;
+}
+
+console.log(
+
+rot13("SERR PBQR PNZC")
+);
+// console.log("abc".length)

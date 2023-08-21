@@ -1,0 +1,13 @@
+function palindrome(str) {
+  let newStr = str.replace(/[^0-9a-zA-Z]/g, '').toLowerCase();
+  let revStr = newStr.split("").reverse().join("");
+  if (newStr === revStr) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(
+palindrome("0_0 (: /-\ :) 0-0")
+);
